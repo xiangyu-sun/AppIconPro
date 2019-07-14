@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -10,11 +12,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="AppIconPro" id="1Xt-HY-uBw">
+                            <menuItem title="AppIconBox" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="AppIconPro" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="AppIconBox" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About AppIconPro" id="5kV-Vb-QxS">
+                                        <menuItem title="About AppIconBox" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -28,7 +30,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide AppIconPro" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide AppIconBox" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -46,7 +48,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit AppIconPro" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit AppIconBox" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -659,7 +661,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="AppIconPro Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="AppIconBox Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -673,7 +675,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="AppIconPro" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -700,14 +702,50 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Delegate-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
+                <viewController id="XfG-lQ-9wD" customClass="ImageCanvasController" customModule="AppIconPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="m2S-Jp-Qdl" customClass="ImageCanvas" customModule="AppIconPro" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="q3s-yA-kdB">
+                                <rect key="frame" x="232" y="127" width="16" height="16"/>
+                            </progressIndicator>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c81-Xk-3Dt">
+                                <rect key="frame" x="130" y="121" width="221" height="29"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Drag an image here" id="4FT-k1-Q1y">
+                                    <font key="font" metaFont="systemBold" size="24"/>
+                                    <color key="textColor" name="placeholderTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="zN9-zy-XzQ">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="D6l-XS-tCt"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="c81-Xk-3Dt" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="I3U-1V-sAo"/>
+                            <constraint firstItem="q3s-yA-kdB" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="OKu-b4-DbW"/>
+                            <constraint firstAttribute="bottom" secondItem="zN9-zy-XzQ" secondAttribute="bottom" id="ZIH-O8-YKs"/>
+                            <constraint firstAttribute="trailing" secondItem="zN9-zy-XzQ" secondAttribute="trailing" id="lQ9-2J-cuJ"/>
+                            <constraint firstItem="c81-Xk-3Dt" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="rbP-m4-YRU"/>
+                            <constraint firstItem="zN9-zy-XzQ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="sqp-Ec-L99"/>
+                            <constraint firstItem="q3s-yA-kdB" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="vrA-sr-97m"/>
+                            <constraint firstItem="zN9-zy-XzQ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="wMj-Fg-jyl"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="XfG-lQ-9wD" id="b6x-fY-toF"/>
+                            <outlet property="imageView" destination="zN9-zy-XzQ" id="6sT-QB-5VY"/>
+                            <outlet property="progressIndicator" destination="q3s-yA-kdB" id="Gnx-y8-QFN"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="imageCanvas" destination="m2S-Jp-Qdl" id="MhL-Hd-SIb"/>
+                        <outlet property="placeholderLabel" destination="c81-Xk-3Dt" id="V3P-Bb-38B"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

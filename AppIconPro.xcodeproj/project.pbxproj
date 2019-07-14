@@ -10,9 +10,18 @@
 		46D9320722D4F0CF00B717BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9320622D4F0CF00B717BF /* AppDelegate.swift */; };
 		46D9320922D4F0CF00B717BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9320822D4F0CF00B717BF /* ViewController.swift */; };
 		46D9320B22D4F0D000B717BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D9320A22D4F0D000B717BF /* Assets.xcassets */; };
-		46D9320E22D4F0D000B717BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D9320C22D4F0D000B717BF /* Main.storyboard */; };
-		46D9321A22D4F0D000B717BF /* AppIconProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9321922D4F0D000B717BF /* AppIconProTests.swift */; };
 		46D9322522D4F0D000B717BF /* AppIconProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9322422D4F0D000B717BF /* AppIconProUITests.swift */; };
+		46D9323722D4F0E800B717BF /* IconGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9323222D4F0E800B717BF /* IconGenerator.swift */; };
+		46D9323822D4F0E800B717BF /* ImageCanvasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9323322D4F0E800B717BF /* ImageCanvasController.swift */; };
+		46D9323922D4F0E800B717BF /* MacIconGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9323422D4F0E800B717BF /* MacIconGenerator.swift */; };
+		46D9323A22D4F0E800B717BF /* ImageCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9323522D4F0E800B717BF /* ImageCanvas.swift */; };
+		46D9323B22D4F0E800B717BF /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9323622D4F0E800B717BF /* Icon.swift */; };
+		46D9325C22D4F14200B717BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D9325A22D4F14100B717BF /* Main.storyboard */; };
+		46D9326022D4F15000B717BF /* MacSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 46D9325D22D4F14F00B717BF /* MacSample.json */; };
+		46D9326122D4F15000B717BF /* AppSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 46D9325E22D4F14F00B717BF /* AppSample.json */; };
+		46D9326222D4F15000B717BF /* WatchSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 46D9325F22D4F15000B717BF /* WatchSample.json */; };
+		46D9326522D4F15700B717BF /* IconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9326322D4F15700B717BF /* IconTests.swift */; };
+		46D9326622D4F15700B717BF /* AppIconBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9326422D4F15700B717BF /* AppIconBoxTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,15 +46,24 @@
 		46D9320622D4F0CF00B717BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46D9320822D4F0CF00B717BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46D9320A22D4F0D000B717BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		46D9320D22D4F0D000B717BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46D9320F22D4F0D000B717BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D9321022D4F0D000B717BF /* AppIconPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppIconPro.entitlements; sourceTree = "<group>"; };
 		46D9321522D4F0D000B717BF /* AppIconProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppIconProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		46D9321922D4F0D000B717BF /* AppIconProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconProTests.swift; sourceTree = "<group>"; };
 		46D9321B22D4F0D000B717BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D9322022D4F0D000B717BF /* AppIconProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppIconProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D9322422D4F0D000B717BF /* AppIconProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconProUITests.swift; sourceTree = "<group>"; };
 		46D9322622D4F0D000B717BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D9323222D4F0E800B717BF /* IconGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconGenerator.swift; sourceTree = "<group>"; };
+		46D9323322D4F0E800B717BF /* ImageCanvasController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCanvasController.swift; sourceTree = "<group>"; };
+		46D9323422D4F0E800B717BF /* MacIconGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacIconGenerator.swift; sourceTree = "<group>"; };
+		46D9323522D4F0E800B717BF /* ImageCanvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCanvas.swift; sourceTree = "<group>"; };
+		46D9323622D4F0E800B717BF /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		46D9325B22D4F14100B717BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46D9325D22D4F14F00B717BF /* MacSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MacSample.json; sourceTree = "<group>"; };
+		46D9325E22D4F14F00B717BF /* AppSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppSample.json; sourceTree = "<group>"; };
+		46D9325F22D4F15000B717BF /* WatchSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WatchSample.json; sourceTree = "<group>"; };
+		46D9326322D4F15700B717BF /* IconTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconTests.swift; sourceTree = "<group>"; };
+		46D9326422D4F15700B717BF /* AppIconBoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIconBoxTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +116,16 @@
 			children = (
 				46D9320622D4F0CF00B717BF /* AppDelegate.swift */,
 				46D9320822D4F0CF00B717BF /* ViewController.swift */,
+				46D9323522D4F0E800B717BF /* ImageCanvas.swift */,
+				46D9323422D4F0E800B717BF /* MacIconGenerator.swift */,
+				46D9323322D4F0E800B717BF /* ImageCanvasController.swift */,
+				46D9323622D4F0E800B717BF /* Icon.swift */,
+				46D9323222D4F0E800B717BF /* IconGenerator.swift */,
+				46D9325A22D4F14100B717BF /* Main.storyboard */,
+				46D9325E22D4F14F00B717BF /* AppSample.json */,
+				46D9325F22D4F15000B717BF /* WatchSample.json */,
+				46D9325D22D4F14F00B717BF /* MacSample.json */,
 				46D9320A22D4F0D000B717BF /* Assets.xcassets */,
-				46D9320C22D4F0D000B717BF /* Main.storyboard */,
 				46D9320F22D4F0D000B717BF /* Info.plist */,
 				46D9321022D4F0D000B717BF /* AppIconPro.entitlements */,
 			);
@@ -109,7 +135,8 @@
 		46D9321822D4F0D000B717BF /* AppIconProTests */ = {
 			isa = PBXGroup;
 			children = (
-				46D9321922D4F0D000B717BF /* AppIconProTests.swift */,
+				46D9326422D4F15700B717BF /* AppIconBoxTests.swift */,
+				46D9326322D4F15700B717BF /* IconTests.swift */,
 				46D9321B22D4F0D000B717BF /* Info.plist */,
 			);
 			path = AppIconProTests;
@@ -228,8 +255,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D9326022D4F15000B717BF /* MacSample.json in Resources */,
+				46D9326222D4F15000B717BF /* WatchSample.json in Resources */,
+				46D9326122D4F15000B717BF /* AppSample.json in Resources */,
 				46D9320B22D4F0D000B717BF /* Assets.xcassets in Resources */,
-				46D9320E22D4F0D000B717BF /* Main.storyboard in Resources */,
+				46D9325C22D4F14200B717BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +285,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				46D9320922D4F0CF00B717BF /* ViewController.swift in Sources */,
+				46D9323922D4F0E800B717BF /* MacIconGenerator.swift in Sources */,
+				46D9323B22D4F0E800B717BF /* Icon.swift in Sources */,
+				46D9323822D4F0E800B717BF /* ImageCanvasController.swift in Sources */,
+				46D9323722D4F0E800B717BF /* IconGenerator.swift in Sources */,
 				46D9320722D4F0CF00B717BF /* AppDelegate.swift in Sources */,
+				46D9323A22D4F0E800B717BF /* ImageCanvas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46D9321A22D4F0D000B717BF /* AppIconProTests.swift in Sources */,
+				46D9326622D4F15700B717BF /* AppIconBoxTests.swift in Sources */,
+				46D9326522D4F15700B717BF /* IconTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,10 +327,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		46D9320C22D4F0D000B717BF /* Main.storyboard */ = {
+		46D9325A22D4F14100B717BF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				46D9320D22D4F0D000B717BF /* Base */,
+				46D9325B22D4F14100B717BF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -353,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -408,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -430,7 +466,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.AppIconPro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.AppIconBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -449,7 +485,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.AppIconPro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.AppIconBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
