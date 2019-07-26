@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		463F722122EAFD8B005E65EA /* ComplicationSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 463F722022EAFD8B005E65EA /* ComplicationSample.json */; };
 		46D9320722D4F0CF00B717BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9320622D4F0CF00B717BF /* AppDelegate.swift */; };
-		46D9320922D4F0CF00B717BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9320822D4F0CF00B717BF /* ViewController.swift */; };
 		46D9320B22D4F0D000B717BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D9320A22D4F0D000B717BF /* Assets.xcassets */; };
 		46D9322522D4F0D000B717BF /* AppIconProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9322422D4F0D000B717BF /* AppIconProUITests.swift */; };
 		46D9323722D4F0E800B717BF /* IconGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9323222D4F0E800B717BF /* IconGenerator.swift */; };
@@ -42,9 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		463F722022EAFD8B005E65EA /* ComplicationSample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ComplicationSample.json; path = ../../../../../System/Volumes/Data/Users/sunxiangyu/Desktop/AppIconPro/AppIconPro/ComplicationSample.json; sourceTree = "<group>"; };
 		46D9320322D4F0CF00B717BF /* AppIconPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIconPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D9320622D4F0CF00B717BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46D9320822D4F0CF00B717BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46D9320A22D4F0D000B717BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46D9320F22D4F0D000B717BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D9321022D4F0D000B717BF /* AppIconPro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppIconPro.entitlements; sourceTree = "<group>"; };
@@ -115,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				46D9320622D4F0CF00B717BF /* AppDelegate.swift */,
-				46D9320822D4F0CF00B717BF /* ViewController.swift */,
 				46D9323522D4F0E800B717BF /* ImageCanvas.swift */,
 				46D9323422D4F0E800B717BF /* MacIconGenerator.swift */,
 				46D9323322D4F0E800B717BF /* ImageCanvasController.swift */,
@@ -125,6 +124,7 @@
 				46D9325E22D4F14F00B717BF /* AppSample.json */,
 				46D9325F22D4F15000B717BF /* WatchSample.json */,
 				46D9325D22D4F14F00B717BF /* MacSample.json */,
+				463F722022EAFD8B005E65EA /* ComplicationSample.json */,
 				46D9320A22D4F0D000B717BF /* Assets.xcassets */,
 				46D9320F22D4F0D000B717BF /* Info.plist */,
 				46D9321022D4F0D000B717BF /* AppIconPro.entitlements */,
@@ -258,6 +258,7 @@
 				46D9326022D4F15000B717BF /* MacSample.json in Resources */,
 				46D9326222D4F15000B717BF /* WatchSample.json in Resources */,
 				46D9326122D4F15000B717BF /* AppSample.json in Resources */,
+				463F722122EAFD8B005E65EA /* ComplicationSample.json in Resources */,
 				46D9320B22D4F0D000B717BF /* Assets.xcassets in Resources */,
 				46D9325C22D4F14200B717BF /* Main.storyboard in Resources */,
 			);
@@ -284,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46D9320922D4F0CF00B717BF /* ViewController.swift in Sources */,
 				46D9323922D4F0E800B717BF /* MacIconGenerator.swift in Sources */,
 				46D9323B22D4F0E800B717BF /* Icon.swift in Sources */,
 				46D9323822D4F0E800B717BF /* ImageCanvasController.swift in Sources */,

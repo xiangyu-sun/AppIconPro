@@ -23,11 +23,15 @@ public struct Icon: Decodable, CustomDebugStringConvertible {
     }
     
     public var pixelSize: CGSize {
-        guard let width = size.components(separatedBy: "x").first, let widthValue = Double(width) else {
+        let comp = size.components(separatedBy: "x")
+        let width = comp[0]
+        let height = comp[1]
+        guard
+        let widthValue = Double(width), let heightValue = Double(height) else {
             return CGSize.zero
         }
         
-        return CGSize(width: widthValue * scaleFactor, height: widthValue * scaleFactor)
+        return CGSize(width: widthValue * scaleFactor, height: heightValue * scaleFactor)
     }
     
     public var debugDescription: String {

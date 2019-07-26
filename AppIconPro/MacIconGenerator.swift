@@ -24,8 +24,11 @@ class MacIconGenerator: IconGenerator {
         var app = try MacIconGenerator.generateIconSets(jsonFile: "AppSample")
         let watch = try MacIconGenerator.generateIconSets(jsonFile: "WatchSample")
         let mac = try MacIconGenerator.generateIconSets(jsonFile: "MacSample")
+        let complication = try MacIconGenerator.generateIconSets(jsonFile: "ComplicationSample")
+        
         app.append(contentsOf: watch)
         app.append(contentsOf: mac)
+        app.append(contentsOf: complication)
         
         icons = app
     }
@@ -42,7 +45,22 @@ class MacIconGenerator: IconGenerator {
     func write(icon: Icon, to url: URL) throws {
         
         let outpuImage = NSImage(size: icon.pixelSize, flipped: false) { [unowned self] (rect) -> Bool in
-            self.image.draw(in: rect)
+            
+            let delta = rect.width - rect.height
+            
+            if delta == 0 {
+                self.image.draw(in: rect)
+            } else {
+                var drawRect = rect
+                if delta > 0 {
+                    drawRect.origin.x = delta * 0.5
+                    drawRect.size.width = rect.height
+                } else {
+                    drawRect.origin.y = abs(delta) * 0.5
+                    drawRect.size.height = rect.width
+                }
+                self.image.draw(in: drawRect)
+            }
             return true
         }
         
