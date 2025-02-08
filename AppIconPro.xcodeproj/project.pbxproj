@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		463F722122EAFD8B005E65EA /* ComplicationSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 463F722022EAFD8B005E65EA /* ComplicationSample.json */; };
 		46D9320722D4F0CF00B717BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9320622D4F0CF00B717BF /* AppDelegate.swift */; };
 		46D9320B22D4F0D000B717BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D9320A22D4F0D000B717BF /* Assets.xcassets */; };
 		46D9322522D4F0D000B717BF /* AppIconProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9322422D4F0D000B717BF /* AppIconProUITests.swift */; };
@@ -42,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		463F722022EAFD8B005E65EA /* ComplicationSample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ComplicationSample.json; path = ../../../../../System/Volumes/Data/Users/sunxiangyu/Desktop/AppIconPro/AppIconPro/ComplicationSample.json; sourceTree = "<group>"; };
 		46D9320322D4F0CF00B717BF /* AppIconPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIconPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D9320622D4F0CF00B717BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46D9320A22D4F0D000B717BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 				46D9325E22D4F14F00B717BF /* AppSample.json */,
 				46D9325F22D4F15000B717BF /* WatchSample.json */,
 				46D9325D22D4F14F00B717BF /* MacSample.json */,
-				463F722022EAFD8B005E65EA /* ComplicationSample.json */,
 				46D9320A22D4F0D000B717BF /* Assets.xcassets */,
 				46D9320F22D4F0D000B717BF /* Info.plist */,
 				46D9321022D4F0D000B717BF /* AppIconPro.entitlements */,
@@ -213,8 +210,9 @@
 		46D931FB22D4F0CF00B717BF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = "孙翔宇";
 				TargetAttributes = {
 					46D9320222D4F0CF00B717BF = {
@@ -258,7 +256,6 @@
 				46D9326022D4F15000B717BF /* MacSample.json in Resources */,
 				46D9326222D4F15000B717BF /* WatchSample.json in Resources */,
 				46D9326122D4F15000B717BF /* AppSample.json in Resources */,
-				463F722122EAFD8B005E65EA /* ComplicationSample.json in Resources */,
 				46D9320B22D4F0D000B717BF /* Assets.xcassets in Resources */,
 				46D9325C22D4F14200B717BF /* Main.storyboard in Resources */,
 			);
@@ -364,6 +361,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -372,9 +370,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -396,6 +396,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
 			};
 			name = Debug;
 		};
@@ -425,6 +426,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -433,9 +435,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -450,6 +454,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
 			};
 			name = Release;
 		};
@@ -460,12 +465,14 @@
 				CODE_SIGN_ENTITLEMENTS = AppIconPro/AppIconPro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 46S3S784AR;
 				INFOPLIST_FILE = AppIconPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.AppIconBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -479,12 +486,14 @@
 				CODE_SIGN_ENTITLEMENTS = AppIconPro/AppIconPro.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 46S3S784AR;
 				INFOPLIST_FILE = AppIconPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.AppIconBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -494,10 +503,10 @@
 		46D9322D22D4F0D000B717BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 46S3S784AR;
 				INFOPLIST_FILE = AppIconProTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -505,6 +514,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.AppIconProTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -515,10 +525,10 @@
 		46D9322E22D4F0D000B717BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 46S3S784AR;
 				INFOPLIST_FILE = AppIconProTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -526,6 +536,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.AppIconProTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -536,9 +547,9 @@
 		46D9323022D4F0D000B717BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 46S3S784AR;
 				INFOPLIST_FILE = AppIconProUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -546,6 +557,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.AppIconProUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -556,9 +568,9 @@
 		46D9323122D4F0D000B717BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 46S3S784AR;
 				INFOPLIST_FILE = AppIconProUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -566,6 +578,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.AppIconProUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

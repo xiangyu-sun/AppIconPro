@@ -24,11 +24,10 @@ class MacIconGenerator: IconGenerator {
         var app = try MacIconGenerator.generateIconSets(jsonFile: "AppSample")
         let watch = try MacIconGenerator.generateIconSets(jsonFile: "WatchSample")
         let mac = try MacIconGenerator.generateIconSets(jsonFile: "MacSample")
-        let complication = try MacIconGenerator.generateIconSets(jsonFile: "ComplicationSample")
+
         
         app.append(contentsOf: watch)
         app.append(contentsOf: mac)
-        app.append(contentsOf: complication)
         
         icons = app
     }
